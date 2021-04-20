@@ -1,0 +1,13 @@
+@charset "utf-8";
+div#anakutu{
+    width: 1000px;
+    margin: auto;
+   background: lightsteelblue;
+
+}
+div.kutu{
+    width: 100px;
+    height: 100px;
+    background: rgb(118, 167, 231);
+    position: static;
+}
