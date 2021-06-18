@@ -1,0 +1,9 @@
+.content .kutu p:nth-child(1){
+color: hotpink;
+}
+.content .kutu p:nth-child(2){
+    color: rgb(93, 157, 218);
+    }
+    .resim{
+        background: rgb(110, 102, 102);
+    }

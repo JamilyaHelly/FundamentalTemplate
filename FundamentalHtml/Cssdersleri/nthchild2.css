@@ -1,0 +1,13 @@
+.content .kutu:nth-child(2) p:nth-child(1){
+    color: hotpink;
+    }
+    .content .kutu:nth-child(1) p{
+        color: yellowgreen;
+    }
+    .content .kutu:nth-child(3) p{
+        font-size: 25px;
+        font-style: italic;
+    }
+    .content .kutu:nth-child(2) p:nth-child(2){
+        color: violet;
+    }

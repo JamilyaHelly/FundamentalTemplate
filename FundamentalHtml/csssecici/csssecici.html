@@ -1,0 +1,423 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Untitled Document</title>
+	<link rel="stylesheet" href="../csssecici/csssecici.css">
+</head>
+
+<body>
+
+	<h1>CSS SEÇİCİLERİ</h1>
+	<section>
+		<h2>(*) EVRENSEL SEÇİCİ</h2>
+		<br><br>
+		<p>Sayfadaki tüm nesneleri seçmeye yarar.
+		</p>
+
+	</section>
+
+	<section class="sinif">
+		<h2>2- Class Seçici(Sınıf Seçici .etiket)</h2>
+		<p class="kirmizi italik">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+			dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+			ea commodo consequat.
+		</p>
+		 
+	</section>
+	<section id="tekilsecici">
+		<h2>3- Id Seçici (Kimlik Seçici #etiket)</h2>
+		<p id="paragraf">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+			labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+			aliquip ex ea commodo consequat. </p>
+	</section>
+	<section class="etiket">
+		<h2> 4- Etiket Seçici (a, div, p)</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+			magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+			commodo consequat.</p>
+		<hr>
+		<a href="#">Google</a>
+
+	</section>
+	<section class="coklu">
+		<h2 class="baslik">5- Çoklu Seçiciler(X,Y,Z) </h2>
+		<h3 class="anabas">Lorem Ipsum</h3>
+		<p class="icerik">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+			labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+			aliquip ex ea commodo consequat.</p>
+		<a href="#">Google</a>
+
+	</section>
+	<section class="torun">
+		<h2>6- İç Nesne Seçiciler (Torun Seçiciler X Y)</h2>
+		<h3>Lorem Ipsum</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+			magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+			commodo consequat.</p>
+		<a href="#">Google</a>
+	</section>
+	<section class="yanyana">
+		<h2>7- Yanyana Seçiciler(X+Y)</h2>
+		<h3>Lorem Ipsum</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+			magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+			commodo consequat.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+			magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+			commodo consequat.</p>
+		<a href="#">Google</a>
+	</section>
+	<section class="cocuk">
+		<h2> 8- Çocuk Seçiciler(X > Y) </h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+			magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+			commodo consequat.</p>
+		<br>
+		<strong>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+				ex ea commodo consequat.</p>
+		</strong><br>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+			magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+			commodo consequat.</p>
+	</section>
+	<section class="bitisik">
+		<h2>9- Bitişik Seçiciler(X~Y) </h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+			magna aliqua.</p><br>
+		<ul>
+			<li>Css</li>
+			<li>Html</li>
+			<li>Python</li>
+		</ul>
+		<p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		</p>
+		<br>
+		<p>
+			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		</p>
+
+	</section>
+	<section class="nitelik">
+		<h2>10- Nitelik Seçici(X[Y])</h2>
+		<p><a href="https://google.com">Google</a></p>
+		<p><a href="http://yandex.com">Yandex</a></p>
+		<form id="form1" name="form1" method="post">
+			<label for="textfield">Adınız: </label>
+			<input type="text" name="textfield" id="textfield">
+			<input type="radio" name="radio" id="radio" value="radio">
+			<label for="radio">Evli
+				<input type="radio" name="radio" id="radio2" value="radio2">
+				Bekar </label>
+			<input type="button" name="button" id="button" value="Formu gonder">
+		</form>
+		<p>&nbsp;</p>
+	</section>
+	<section class="nitelikicerik">
+		<h2>11- Nitelik Seçici(X[Nitelik='Değer'] *, $, ^, ~ ) </h2>
+		<p><a href="mailto:bilisimdunyasi@gmail.com">E-posta</a></p>
+		<p><a href="http://yandex.com">Yandex</a></p>
+		<p><a href="http://www.youtube.com">Youtube</a></p>
+	</section>
+	<section class="ilk">
+		<h2>12- X::first-letter ve X::first-line</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+			magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+			commodo consequat.</p>
+	</section>
+	<section class="oncesonra">
+		<h2>13- X::before ve X::after</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+			magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+			commodo consequat.</p>
+
+		<p class="sonrasi">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+			labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+			aliquip ex ea commodo consequat.</p>
+
+	</section>
+
+	<section class="nth">
+		<h2>14-Nth(n'inci)-child </h2>
+		<div class="kutu">
+			<div class="kutular">1</div>
+			<div class="kutular">2</div>
+			<div class="kutular">3</div>
+			<div class="kutular">4</div>
+			<div class="kutular">5</div>
+			<div class="kutular">6</div>
+			<div class="kutular">7</div>
+			<div class="kutular">8</div>
+			<div class="kutular">9</div>
+			<div class="kutular">10</div>
+			<div class="kutular">11</div>
+			<div class="kutular">12</div>
+			<div class="kutular">13</div>
+			<div class="kutular">14</div>
+			<div class="kutular">15</div>
+			<div class="kutular">16</div>
+			<div class="kutular">17</div>
+			<div class="kutular">18</div>
+			<div class="kutular">19</div>
+			<div class="kutular">20</div>
+		</div>
+	</section>
+	<section class="nth2">
+		<h2>14-Nth(n'inci)-child </h2>
+		<div class="kutu">
+			<div class="kutular">1</div>
+			<div class="kutular">2</div>
+			<div class="kutular">3</div>
+			<div class="kutular">4</div>
+			<div class="kutular">5</div>
+			<div class="kutular">6</div>
+			<div class="kutular">7</div>
+			<div class="kutular">8</div>
+			<div class="kutular">9</div>
+			<div class="kutular">10</div>
+			<div class="kutular">11</div>
+			<div class="kutular">12</div>
+			<div class="kutular">13</div>
+			<div class="kutular">14</div>
+			<div class="kutular">15</div>
+			<div class="kutular">16</div>
+			<div class="kutular">17</div>
+			<div class="kutular">18</div>
+			<div class="kutular">19</div>
+			<div class="kutular">20</div>
+		</div>
+	</section>
+	<section class="nth3">
+		<h2>14-Nth(n'inci)-child </h2>
+		<div class="kutu">
+			<div class="kutular">1</div>
+			<div class="kutular">2</div>
+			<div class="kutular">3</div>
+			<div class="kutular">4</div>
+			<div class="kutular">5</div>
+			<div class="kutular">6</div>
+			<div class="kutular">7</div>
+			<div class="kutular">8</div>
+			<div class="kutular">9</div>
+			<div class="kutular">10</div>
+			<div class="kutular">11</div>
+			<div class="kutular">12</div>
+			<div class="kutular">13</div>
+			<div class="kutular">14</div>
+			<div class="kutular">15</div>
+			<div class="kutular">16</div>
+			<div class="kutular">17</div>
+			<div class="kutular">18</div>
+			<div class="kutular">19</div>
+			<div class="kutular">20</div>
+		</div>
+	</section>
+	<section class="nth4">
+		<h2>14-Nth(n'inci)-child </h2>
+		<div class="kutu">
+			<div class="kutular">1</div>
+			<div class="kutular">2</div>
+			<div class="kutular">3</div>
+			<div class="kutular">4</div>
+			<div class="kutular">5</div>
+			<div class="kutular">6</div>
+			<div class="kutular">7</div>
+			<div class="kutular">8</div>
+			<div class="kutular">9</div>
+			<div class="kutular">10</div>
+			<div class="kutular">11</div>
+			<div class="kutular">12</div>
+			<div class="kutular">13</div>
+			<div class="kutular">14</div>
+			<div class="kutular">15</div>
+			<div class="kutular">16</div>
+			<div class="kutular">17</div>
+			<div class="kutular">18</div>
+			<div class="kutular">19</div>
+			<div class="kutular">20</div>
+		</div>
+	</section>
+	<section class="nth5">
+		<h2>14-Nth(n'inci)-child </h2>
+		<div class="kutu">
+			<div class="kutular">1</div>
+			<div class="kutular">2</div>
+			<div class="kutular">3</div>
+			<div class="kutular">4</div>
+			<div class="kutular">5</div>
+			<div class="kutular">6</div>
+			<div class="kutular">7</div>
+			<div class="kutular">8</div>
+			<div class="kutular">9</div>
+			<div class="kutular">10</div>
+			<div class="kutular">11</div>
+			<div class="kutular">12</div>
+			<div class="kutular">13</div>
+			<div class="kutular">14</div>
+			<div class="kutular">15</div>
+			<div class="kutular">16</div>
+			<div class="kutular">17</div>
+			<div class="kutular">18</div>
+			<div class="kutular">19</div>
+			<div class="kutular">20</div>
+		</div>
+	</section>
+	<section class="tablo">
+		<h2>15 tablo biçimlendirme</h2>
+		<p> &nbsp;</p>
+		<table width="500" cellspacing="0" cellpadding="0">
+			<tbody>
+				<tr>
+					<td colspan="4"> Ornek tablo</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+
+			</tbody>
+		</table>
+	</section>
+	<section>
+		<h2>10- Nitelik Seçici(X[Y])</h2>
+	</section>
+
+	<section>
+		<h2></h2>
+		<form id="form1" name="form1" method="post">
+			<label for="textfield">Adınız: </label>
+			<input type="text" name="textfield" id="textfield">
+
+			<label for="textfield">Numaranız: </label>
+			<input type="text" name="textfield" id="textfield">
+			<p>&nbsp;</p>
+			<div>
+				<input type="radio" name="radio" id="radio1" value="radio">
+				<label for="radio">
+					Evli
+				</label>
+				<input type="radio" name="radio" id="radio2" value="radio2">
+				<label for="radio">
+					Bekar
+				</label>
+			</div>
+
+			<p>&nbsp;</p>
+			<input type="button" name="button" id="button" value="Formu gonder">
+
+		</form>
+		<p>&nbsp;</p>
+		<input type="radio" name="radio" id="radio" value="radio">
+		<label for="radio">Muzik</label>
+
+		<input type="radio" name="radio" id="radio2" value="radio2">
+		<label for="redio">Resim</label>
+
+		<p><a href="https://google.com">Google</a></p>
+		<p><a href="http://yandex.com">Yandex</a></p>
+	</section>
+
+	<section class="pseudo">
+		<h2>16-Sözde sınıflar</h2>
+		<form name="form1" method="POST">
+			<p>
+				<label for="text"> Name</label>
+				<input type="text" name="text" disabled>
+			</p>
+			<p>
+				<label for=" text"> Text</label>
+				<input type="text" name="text">
+			</p>
+			<p>
+				<label for="number">Nummber</label>
+				<input type="number" name="text" min="1" max="10" placeholder="1-10">
+			</p>
+		</form>
+		<p>&nbsp;</p>
+
+		<input type="radio" name="radio" value="radio">
+		<label for="radio">Music</label>
+
+		<input type="radio" name="radio" value="radio2">
+		<label for="radio">Picture</label>
+
+		<p>&nbsp;</p>
+
+		<input type="radio" name="name1" value="radio3">
+		<label for="radio"> Single</label>
+
+		<input type="radio" name="name1" value="radio3">
+		<label for="radio">Merrid</label>
+
+		<p>&nbsp;</p>
+		<input type="button" name="button" value="Send Form">
+
+		<p><a href="https://google.com">Google</a></p>
+		<p><a href="http://yandex.com">Yandex</a></p>
+		<p><a href="https://yahoo.com">Yahoo</a></p>
+
+	</section>
+
+	<section>
+		<h2>18 deneem</h2>
+		<label class="container">One
+			<input type="checkbox" name="radio" checked="checked">
+			<span class="checkmark"></span>
+		</label>
+		<label class="container">Two
+			<input type="checkbox" name="radio">
+			<span class="checkmark"></span>
+		</label>
+	</section>
+
+</body>
+
+</html>

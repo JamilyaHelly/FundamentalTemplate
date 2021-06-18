@@ -1,0 +1,524 @@
+@charset "utf-8";
+/* CSS Document */
+
+		@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,700');
+
+	body{
+		background: #f5f5f5;
+		font-family: 'Crimson Text', serif;
+		color: #18314F;
+	}
+	.baslik{
+		font-size: 26px; 
+	}
+	h1{text-align: center;
+	letter-spacing: 4px;
+	color: #18314F;
+		font-weight: 400;
+
+	}
+
+	section{
+		width:800px;
+		height: 500px;
+		background: #FFFFFF;
+		border: 1px solid black;
+		margin: 20px auto;
+		box-shadow: 0 0 20px rgba(0,0,0,.25);
+		padding: 10px;
+
+	}
+	h2 {
+		font-weight: 400;
+		font-size: 1rem;
+		margin-bottom: 3em;
+		letter-spacing: 8px;
+		text-align: center;
+		color: #8BBEB2;
+}
+	
+	h2::after {
+	  content: '';
+	  display: block;
+	  border-bottom: 1px solid rgba(24,49,79,.3);
+	  width: 20%;
+	  margin: 20px auto 0;
+}
+
+	p{
+		color: #18314F;
+		font-size: 18px;
+		letter-spacing: 3px;
+		margin: 5px;
+}
+
+.kutular{
+width: 80px;
+padding: 30px 0;
+border: 1px solid rgba(0,0,0,1.00);
+float: left;
+margin: 10px;
+text-align: center;
+font-size: 18px;
+font-weight: 500;
+}
+
+/*********************** 1- Evrensel Seçici( * )**************************/
+
+/* *{background: #e98687;} */
+
+
+
+
+
+
+
+
+/******************* 2- Class Seçici(Sınıf Seçici .etiket)*******************/
+
+/* .sinif{background: red;
+font-size: 20px;} */
+.kirmizi{
+	color: red;
+}
+.italik{
+	font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************ 3- Id Seçici (Kimlik Seçici #etiket)****************/
+
+#paragraf{
+	font-size: 25px;
+	color: royalblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************** 4- Etiket Seçici (a, div, p)****************************/
+
+
+hr{width: 700px; height: 3px; background-color: rebeccapurple;}
+
+
+/* p{color: aqua;}
+a{color: #FB8B8D;} */
+p,a{color: blue;}
+a{
+	color: blueviolet;
+}
+
+
+
+
+
+
+
+
+
+/********************** 5- Çoklu Seçiciler(X,Y,Z) *****************************/
+.baslik, .icerik{color: chartreuse;
+
+}
+.anabas{font-size: 25px;
+font-style: italic;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************* 6- İç Nesne Seçiciler (Torun Seçiciler X Y)*****************************/
+.torun a{
+	color: deeppink;
+}
+.torun p{
+	color: dimgrey;
+	font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/********************* 7- Yanyana Seçiciler(X+Y)*****************************/
+
+/* .yanyana h3+p{color:red;} */
+.yanyana h3+p{ color: firebrick;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************* 8- Çocuk Seçiciler(X>Y) *****************************/
+
+/* .cocuk > p{color:red} */
+.cocuk >p{
+	font-size:15px;
+	color: forestgreen;
+	display: block;
+	border: 1px solid darkblue;
+
+}
+
+
+
+
+
+
+
+
+
+
+/********************* 9- Bitişik Seçiciler(X~Y) *****************************/
+
+/* .bitisik ul~p{
+	color:white;background-color: blueviolet;
+} */
+
+.bitisik ul ~p{
+	color: darkorchid;
+}
+
+
+
+
+
+
+
+
+/********************* 10- Nitelik Seçici(X[Y]) *****************************/
+/* input[type=text]{
+	background: red;
+}
+input[type=button]{
+	background: red;
+}
+input[type=radio]{
+	transform: scale(2);
+} */
+.nitelik a[href^='https']{
+	text-decoration: none;
+}
+.nitelik a[href$='yandex.com']{color: red;}
+.nitelik input[type='text']{background: turquoise; height: 50px;}
+.nitelik input[value*='radio']{transform: scale(2);}
+.nitelik input[value~='gonder']{background: tomato;}
+
+
+
+
+
+
+
+
+/*********-11- Nitelik Seçici(X[Nitelik='Değer'] *, $, ^, ~ ) *************/
+
+.nitelikicerik a[href^="mailto"]::before{
+	content: "";
+	width: 25px;
+	height: 25px;
+	background: url("../resimler/laptop-backgrounds-nature-images-1920x1200-wallpaper-preview.jpeg") no-repeat;
+    float: left;
+   display: block;
+   background-size: cover;
+
+}
+.nitelikicerik a[href*="yandex"]::before{
+	content: "";
+	width: 25px;
+	height: 25px;
+	background: url("../resimler/windows-backgrounds-nature-for-pc-1920x1200-wallpaper-preview.jpeg") no-repeat;
+float: left;
+display: block;
+background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************12- X::first-letter ve X::first-line *****************/
+
+.ilk p::first-line {color: tomato;}
+.ilk p::first-letter{font-size: 40px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************13- X::before ve X::after **************************/
+
+.oncesonra p:nth-child(2)::before{
+	content:'';
+	color: turquoise;	
+	background:url("../resimler/images.jpeg")  no-repeat;
+	width: 75px;
+	height: 75px;
+	display: block;
+	float: left;
+	background-size: cover;
+
+}
+.sonrasi::first-line{
+	color: violet;
+	font-size: 25px;
+}
+ .sonrasi::first-letter{
+	font-size: 50px;
+	color: yellow;
+}
+
+
+ .sonrasi::before{
+	content: '';
+	border-bottom: 2px solid rgb(155, 57, 57);
+	width: 50%;
+	display: block;
+}
+.sonrasi::after{
+	content: '';
+	border-bottom: 2px solid rgb(155, 57, 57);
+	width: 50%;
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*************************14- Nth(n'inci)-child  ***********************/
+
+/* .kutu .kutular:nth-child(3){
+	background: #FB8B8D;
+} */
+
+.nth .kutular:nth-child(3){
+	background-color: thistle;
+}
+.nth2 .kutular:nth-child(n+5){
+	background-color:palevioletred;
+}
+.nth3 .kutular:nth-child(3n+1){
+	background-color: rgb(122, 41, 122);
+}
+.nth4 .kutular:nth-child(odd){
+	background-color: rgb(34, 107, 136);
+}
+.nth5 .kutular:nth-child(even){
+	background-color: rgb(96, 189, 142);
+}
+.nth .kutular:nth-last-child(3){
+	background-color: yellow;
+}
+
+
+
+
+/************* 15- Tablo biçimlendırme***************/
+
+.tablo tr:nth-child(even){
+	background: rgb(199, 190, 190);
+}
+.tablo tr:nth-child(odd){
+	background: rgb(192, 223, 238);
+}
+
+
+/********* 16 Psodo ozellıgı*********/
+.pseudo a:link{
+	color: rebeccapurple;
+}
+
+.pseudo a:hover{ 
+
+	text-decoration: none;
+	color: green;
+}
+/* .pseudo input:hover{
+	background: hotpink;
+} */
+
+.pseudo a:visited{
+	text-decoration: none;
+	color: indianred;
+
+}
+
+.pseudo a:active{
+	text-decoration: none;
+	color: mediumblue;
+}
+.pseudo input[name="text"]:focus{
+	background: rgb(96, 189, 142);
+}
+.pseudo input:checked{
+	width: 25px;
+	height: 25px;
+}
+.pseudo input[type="text"]:disabled{
+	background: sandybrown;
+}
+.pseudo input[type="text"]:enabled{
+	background: turquoise;
+	
+}
+/* .pseudo input[type="number"]:out-of-range{
+	background: tomato;
+} */
+.pseudo input[type="number"]:out-of-range{
+	background: rgb(216, 90, 206);
+	border:2px solid rgb(108, 99, 133);
+	box-shadow: 0 0 5px 5px red;
+	-webkit-box-shadow: 0 0 5px 2px red;
+}
+/*************** 18 deneme************************/
+/* 
+/* The container */
+.container {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+	background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+	background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+	display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+  }
+  
+  
+
+
+
+
