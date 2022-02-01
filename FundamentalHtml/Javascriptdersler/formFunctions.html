@@ -1,0 +1,48 @@
+<!--
+    onclick (foksiondaki yapilan işkeme gore tıklanınca )
+    ondbclick( iki kere ardarda tiklanınca)
+    onlaod( resim vidoa  vb yuklenince verilen mesaj veya uyari fonksionu yapılabılır )
+    onUnload (Jquery ile devam edecegiz)
+    onBlur()
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="formFunctions.js"></script>
+  </head>
+
+  <body>
+    <p id="mesaj"></p>
+    <img
+      src="../resimler/windows-backgrounds-nature-for-pc-1920x1200-wallpaper-preview.jpeg"
+      onload="resimyukle()"
+    />
+    <br />
+
+    <input type="text" id="metin" value="iki kere tikla"/>
+    <input type="button" value="Button" ondblclick="olay()" />
+    <br />
+    <br />
+
+    <input type="text" id="metin2" value="bir kere tikla" />
+    <input type="button" value="Button2" onclick="olay2()" />
+    <br />
+    <br />
+    <input type="button" value="On Focus" onfocus="onFunctions()" />
+    <br />
+    <br />
+    <input type="text" value="Onblur" onblur="onFunctions()"/>
+    
+    <p onmouseout="uzerindenayril()">uzerinden ayrildıgı anda</p>
+    <br />
+    <br />
+
+    <p onmousemove="olay()">uzerinde haraket etme</p>
+
+    <p onmouseover="uzerinegel()">uzerine gel anda</p>
+  </body>
+</html>

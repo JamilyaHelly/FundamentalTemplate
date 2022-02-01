@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Responsive Tasarım</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      p {
+        font-size: 16px;
+        color: aliceblue;
+      }
+      .wrapper {
+        width: 99%;
+      }
+      .container {
+        display: flex;
+        max-width: 1000px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+      header {
+        width: 100%;
+        height: 100px;
+        background: #f69679;
+      }
+      section.bolum1 {
+        display: flex;
+        width: 100%;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        flex-direction: row;
+      }
+      .slider {
+        width: 750px;
+        height: 160px;
+        background: #00ffff;
+        flex-grow: 1;
+        margin: 5px 0px 5px 0;
+        flex-shrink: 2;
+      }
+      aside {
+        display: flex;
+        flex-wrap: wrap;
+        width: 250px;
+        height: 160px;
+        flex-grow: 1;
+        flex-shrink: 1;
+        margin: 5px 0 0px 5px;
+        flex-direction: row;
+        align-content: stretch;
+      }
+      .aciklama {
+        flex-basis: 100%;
+        margin-bottom: 5px;
+        background: #432d04;
+      }
+      .aciklama:nth-last-child(1) {
+        margin-bottom: 0;
+      }
+      section.bolum2 {
+        display: flex;
+        width: 100%;
+        height: 200px;
+        flex-wrap: nowrap;
+      }
+      article {
+        width: 750px;
+        height: 200px;
+        background: #2e3192;
+        flex-grow: 1;
+        flex-shrink: 2;
+      }
+      .yanmenu {
+        flex-basis: 250px;
+        background: #fff200;
+        margin-left: 5px;
+        flex-shrink: 1;
+        flex-grow: 1;
+        height: 200px;
+      }
+      footer {
+        width: 100%;
+        height: 100px;
+        background: #ec008c;
+        margin-top: 5px;
+      }
+
+      @media screen and (max-width: 768px) {
+        section.bolum1 {
+          box-sizing: border-box;
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: flex-start;
+          flex-direction: column;
+        }
+        .slider {
+          width: 100%;
+          height: 160px;
+          background: #00ffff;
+          margin: 5px 0px 5px 0;
+        }
+        aside {
+          margin: 0;
+          display: flex;
+          flex-wrap: nowrap;
+          width: 100%;
+          flex-grow: 1;
+          height: 70px;
+          margin-top: 5px;
+          flex-direction: row;
+        }
+        .aciklama {
+          margin-right: 3px;
+
+          height: 60px;
+        }
+        .bolum2 {
+          flex-direction: row;
+          flex-wrap: nowrap;
+        }
+        .yanmenu {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: 320px) {
+        section.bolum1 {
+          box-sizing: border-box;
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          flex-wrap: wrap;
+          align-items: flex-start;
+          flex-direction: column;
+        }
+        .slider {
+          width: 100%;
+          height: 160px;
+          background: #00ffff;
+          margin: 5px 0px 5px 0;
+        }
+        aside {
+          margin: 0;
+          display: flex;
+          flex-wrap: nowrap;
+          width: 100%;
+          flex-grow: 1;
+          height: 150px;
+          margin-top: 5px;
+          flex-direction: column;
+        }
+        .aciklama {
+          width: 100%;
+          height: 120px;
+          flex-grow: 1;
+          margin-bottom: 5px;
+          margin-right: 3px;
+          background: #432d04;
+        }
+        section.bolum2 {
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          flex-wrap: wrap;
+          align-items: flex-start;
+          flex-direction: row;
+          height: 300px;
+        }
+        article {
+          flex-grow: 1;
+          width: 150px;
+          margin: 5px 0;
+          height: 150px;
+        }
+        .yanmenu {
+          display: flex;
+          flex-grow: 1;
+          height: 150px;
+          width: 200px;
+        }
+        footer {
+          display: flex;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <header>sdfsdf sdf sdf sdf s</header>
+        <section class="bolum1">
+          <div class="slider"></div>
+          <aside>
+            <div class="aciklama"></div>
+            <div class="aciklama"></div>
+            <div class="aciklama"></div>
+          </aside>
+        </section>
+
+        <section class="bolum2">
+          <article>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </article>
+          <div class="yanmenu"></div>
+        </section>
+
+        <footer></footer>
+      </div>
+    </div>
+  </body>
+</html>

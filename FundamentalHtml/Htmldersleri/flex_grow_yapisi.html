@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Grow< (kutu tablo /boyutlarını ayarlanır ve ekren kuculurken kutular aynı boyuta gelir )</title>
+    <title>Flex Shrink ( kutuların /tabloların /alanları farklı bır boyutta kuculmesı ekran kucukdukce)</title>
+    <style>
+      .container {
+        width: 80%;
+        border: 2px solid #351524;
+        display: flex;
+        margin: 15px auto;
+      }
+      .kutu {
+        text-align: center;
+        padding: 70px 0;
+        width: 200px;
+        font-size: 20px;
+        flex-grow: 1;
+      }
+      .kutu1 {
+        background-color: lightcoral;
+        flex-shrink: 1;
+      }
+      .kutu2 {
+        background-color: lightgreen;
+        flex-shrink: 0;
+      }
+      .kutu3 {
+        background-color: lightseagreen;
+        flex-shrink: 2;
+      }
+      .kutu4 {
+        background-color: magenta;
+        flex-shrink: 0;
+      }
+      .kutu5 {
+        background-color: lightcoral;
+        flex-grow: 1;
+      }
+      .kutu6 {
+        background-color: lightgreen;
+        flex-grow: 1;
+      }
+      .kutu7 {
+        background-color: lightseagreen;
+        flex-grow: 2;
+      }
+      .kutu7 {
+        background-color: magenta;
+        flex-grow: 3;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="kutu kutu1"></div>
+      <div class="kutu kutu2"></div>
+      <div class="kutu kutu3"></div>
+      <div class="kutu kutu4"></div>
+    </div>
+    <div class="container">
+        <div class="kutu kutu5"></div>
+        <div class="kutu kutu6"></div>
+        <div class="kutu kutu7"></div>
+        <div class="kutu kutu8"></div>
+      </div>
+  </body>
+</html>

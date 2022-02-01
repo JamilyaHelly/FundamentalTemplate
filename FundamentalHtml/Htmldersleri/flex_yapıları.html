@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Yapısı Css</title>
+    <style>
+      .container-justify-content {
+        display: flex;
+        /* justify-content: flex-end; ekran sonund  horizantal izalama 
+            justify-content: flex-start;  ekran başından horizontal izalanma */
+        /* justify-content: center;    horizontal ordadan izalanma*/
+        /* justify-content: space-between; eşit araliıklarla izalanması*/
+        /* justify-content: space-around; kutunun her iki tarafına eşit şekilde boşluk bırkması */
+        justify-content: space-evenly;
+        background-color: aqua;
+        margin: 50px auto;
+      }
+
+      .container-align-item {
+        display: flex;
+        /* align-items: stretch; arka taraf erken boyutu kadar uzuyor vertikal olarak */
+        /* align-items: flex-end; ekran sonundan başlatıyor vertikal olarak */
+        align-items: center;
+        background-color: rgb(241, 135, 224);
+        height: 500px;
+      }
+
+      .container-justify-align {
+        display: flex;
+        align-items: center;
+        /* justify-content: center; /* ıkısınıde aynı anda tasarıma gore kullanabılırız*/
+        justify-content: flex-end;
+        background-color: rgb(176, 135, 241);
+        height: 500px;
+        margin: 50px auto;
+      }
+      .container-flex-direction {
+        display: flex;
+        /* flex-direction: row;  kutulari normal kucukden buyuge sıralama
+            flex-direction: row-reverse;  kutulari buyukden kucuge sıralama horizantal */
+
+        /* flex-direction: column;  kutuları normal şeklinde sıralama ama vertikal colom şeklinde 
+            flex-direction: column-reverse;  buyukden kucuge sıralama */
+        flex-direction: row;
+        align-items: flex-start;
+        background-color: rgb(36, 233, 46);
+        height: 500px;
+        margin: 50px auto;
+      }
+      .container-flex-wrap {
+        display: flex;
+        /* flex-wrap: wrap-reverse;  buyukden kucuge sıralama ve kutuların kuculmeden yukarıya dogru kayması
+            flex-wrap: nowrap;   kutuların ekran kuculdukce verilen boyuta bakmadan kuculmesı*/
+        flex-wrap: wrap; /*sıralı bir şekilde kutuların ekran kuculdukce boyut degiştirmeden aşagıya dogru kaymaı*/
+        background-color: khaki;
+
+        align-items: flex-start;
+        height: 500px;
+        margin: 50px auto;
+      }
+      .container-aligh-content {
+        display: flex;
+        background-color: lightcoral;
+        height: 500px;
+        margin: 50px auto;
+        flex-wrap: wrap;
+        /* align-content: stretch;  kutu boyutlarin kucultup tam ekran olabılıcek seklınde yapıyor 
+            align-content: flex-end; ekran sonundan başlıyor (tag lar 2 ve vazla kutucuklar satırlar ıcın kullanılıyor)
+            align-content: flex-start;*/
+        /* align-content: center;   */
+        align-content: space-between;
+        /* align-content: space-around;     kutular arsında eşit boşluklar bıralarak  duzenliyor*/
+      }
+      .kutu {
+        background-color: rgb(36, 160, 160);
+        width: 100px;
+        text-align: center;
+        line-height: 75px;
+        margin: 10px;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-justify-content">
+      <div class="kutu" style="order: 5">1</div>
+      <div class="kutu" style="order: 3">2</div>
+      <div class="kutu" style="order: 1">3</div>
+      <div class="kutu" style="order: 6">4</div>
+      <div class="kutu" style="order: 2">5</div>
+      <div class="kutu" style="order: 4">6</div>
+    </div>
+
+    <div class="container-align-item">
+      <div class="kutu">1</div>
+      <div class="kutu">2</div>
+      <div class="kutu">3</div>
+      <div class="kutu">4</div>
+      <div class="kutu">5</div>
+      <div class="kutu">6</div>
+    </div>
+
+    <div class="container-justify-align">
+      <div class="kutu">1</div>
+      <div class="kutu">2</div>
+      <div class="kutu">3</div>
+      <div class="kutu">4</div>
+      <div class="kutu">5</div>
+      <div class="kutu">6</div>
+    </div>
+    <div class="container-flex-direction">
+      <div class="kutu">1</div>
+      <div class="kutu">2</div>
+      <div class="kutu">3</div>
+      <div class="kutu">4</div>
+      <div class="kutu">5</div>
+      <div class="kutu">6</div>
+    </div>
+
+    <div class="container-flex-wrap">
+      <div class="kutu">1</div>
+      <div class="kutu">2</div>
+      <div class="kutu">3</div>
+      <div class="kutu">4</div>
+      <div class="kutu">5</div>
+      <div class="kutu">6</div>
+    </div>
+    <div class="container-aligh-content">
+      <div class="kutu">1</div>
+      <div class="kutu">2</div>
+      <div class="kutu">3</div>
+      <div class="kutu">4</div>
+      <div class="kutu">5</div>
+      <div class="kutu">6</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,444 @@
+@charset "utf-8";
+/*font-family: 'Raleway', sans-serif;*/
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  font-size: 16px;
+  font-family: "Lora", serif;
+}
+.wrapper {
+  width: 100%;
+}
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-position: center center;
+  background: url("../resimler/images/dark_tint.png"),
+    url("../resimler/images/bokeh_car_lights_bg.jpg");
+  background-size: cover;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+header {
+  margin: 0 auto;
+  position: absolute;
+  width: 100%;
+  align-self: flex-start;
+}
+h1 {
+  position: absolute;
+  font-size: 2.2em;
+  margin-left: 30px;
+  margin-top: 30px;
+  color: white;
+  font-weight: 1000;
+  text-transform: uppercase;
+  float: left;
+}
+header nav.menu ul {
+  position: absolute;
+  float: right;
+  right: 20px;
+  top: 10px;
+}
+header nav.menu ul li {
+  display: block;
+  padding: 30px;
+  float: left;
+}
+header nav.menu ul li a {
+  font-size: 25px;
+  color: rgb(230, 218, 218);
+  text-decoration: none;
+  font-weight: 600;
+}
+header nav.menu ul li a:hover {
+  color: white;
+  transition: color 0.2s ease-in-out;
+}
+h2.altbaslik {
+  color: white;
+  font-size: 4em;
+  margin-bottom: 25px;
+}
+.banner .yazi p {
+  color: white;
+  font-size: 2em;
+  line-height: 1.5em;
+  margin-bottom: 50px;
+}
+
+.button a {
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+  padding: 15px 40px;
+  background: turquoise;
+  border-radius: 15px;
+}
+.button a:hover {
+  background: rgb(160, 228, 221);
+  transition: background-color 0.2s ease-in-out;
+  color: black;
+}
+
+section.bolum1 {
+  width: 100%;
+  background: rgb(233, 230, 230);
+  padding: 100px 0;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.bolum1 h2 {
+  color: #474747;
+  font-size: 3em;
+  font-weight: 1000;
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+.bolum1 h2 + p {
+  color: #858585;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.bolum1 .kutu {
+  flex-basis: 350px;
+  flex-shrink: 0;
+  flex-grow: 1;
+  background: rgb(246, 237, 237);
+  text-align: center;
+  padding: 20px 0;
+  margin-right: 25px;
+  align-self: flex-start;
+}
+.bolum1 .kutu:nth-last-child(1) {
+  margin-right: 0;
+}
+.bolum1 .kutu i {
+  font-size: 3em;
+  border-radius: 50%;
+  padding: 40px;
+  color: white;
+}
+.bolum1 .kutu i.birinci {
+  background: rgb(146, 175, 230);
+}
+.bolum1 .kutu i.ikinci {
+  background: rgb(198, 221, 122);
+}
+.bolum1 .kutu i.ucuncu {
+  background: rgb(240, 116, 192);
+}
+
+.bolum1 .kutu h3 {
+  margin: 25px 0;
+  color: #858585;
+  font-size: 2em;
+  font-weight: 800;
+}
+.bolum1 .kutu p {
+  color: #858585;
+  font-size: 1.5em;
+  font-weight: 150;
+  padding: 0 30px 20px 30px;
+  line-height: 1.5em;
+}
+section.bolum2 {
+  width: 100%;
+  background: white;
+  border-top: 1px solid #d1d1d1;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 80px;
+  display: block;
+}
+.bolum2 h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #474747;
+  font-weight: 1000;
+}
+
+.bolum2 h2 + p {
+  font-size: 1.5em;
+  margin-bottom: 80px;
+  color: #858585;
+}
+.bolum2 .kisiler {
+  width: 100%;
+  border-top: 1px solid #d1d1d1;
+  border-bottom: 1px solid #d1d1d1;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.bolum2 .kisi {
+  flex-basis: 220px;
+  margin: 50px 10px;
+  text-align: left;
+  flex-grow: 1;
+}
+.bolum2 .kisi img {
+  float: left;
+  width: 120px;
+  border-radius: 50%;
+  margin: 5px 10px;
+}
+.bolum2 .kisi h4 {
+  margin-top: 20px;
+  font-size: 1.3em;
+  margin-bottom: 5px;
+}
+.bolum2 .kisi p {
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+.bolum2 article {
+  margin: 50px auto;
+  width: 70%;
+}
+.bolum2 article p {
+  font-size: 1.2em;
+  line-height: 1.6em;
+  color: #444;
+}
+.bolum2 ul li a {
+  background: turquoise;
+  border-radius: 15px;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  padding: 1em 2em;
+  text-align: center;
+  margin-top: 70px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+.bolum2 ul li a:hover {
+  background: rgb(160, 228, 221);
+  transition: background-colo 0.2s ease-in-out;
+  color: black;
+}
+.bolum3 {
+  width: 100%;
+  display: block;
+  background: rgb(160, 228, 221);
+  padding: 70px 0 10px;
+  text-align: center;
+}
+.bolum3 h2 {
+  font-size: 3em;
+  color: white;
+  margin-bottom: 20px;
+}
+.bolum3 h2 + p {
+  font-size: 1.4em;
+  color: white;
+  letter-spacing: 2px;
+}
+.bolum3 .container .form {
+  width: 600px;
+  margin: 70px auto;
+}
+.bolum3 .container .form input[type="text"] {
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  padding: 3px 10px;
+  color: #444;
+  font-size: 1em;
+  border: none;
+}
+.bolum3 .container .form input[type="email"] {
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+  padding: 3px 10px;
+  font-size: 1em;
+  color: #444;
+  border: none;
+}
+.bolum3 .container .form textarea {
+  width: 525px;
+  height: 200px;
+  border-radius: 10px;
+  padding: 3px 10px;
+  color: #fff;
+  font-size: 1em;
+  margin-top: 20px;
+  border: none;
+}
+.bolum3 .container .form input[type="submit"] {
+  margin-top: 60px;
+  font-size: 1.1em;
+  padding: 15px 50px;
+  background: #444;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+.bolum3 .container .form input:hover[type="submit"] {
+  background: #5f5e5e;
+  transition: background-color 0.2s ease-in-out;
+}
+footer {
+  width: 100%;
+  background: #383838;
+  padding: 30px 0;
+}
+footer .container {
+  margin-top: 50px;
+  border-bottom: 2px solid #5f5f5f;
+}
+footer .footerkutu {
+  margin-left: 20px;
+  width: 200px;
+}
+footer h3 {
+  color: #fff;
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+footer .container ul {
+  display: block;
+  width: 100%;
+  float: left;
+  margin-bottom: 30px;
+}
+footer .container ul a {
+  color: #cdced0;
+  text-decoration: none;
+  font-size: 1em;
+  line-height: 2.5em;
+}
+
+.sosyal {
+  max-width: 1000;
+  margin: 00 auto;
+}
+footer .lisans {
+  width: 100%;
+  margin: 20px auto;
+}
+footer .lisans p {
+  color: #9fa0a1;
+  float: left;
+  margin-top: 15px;
+  margin-left: 20px;
+  display: inline-block;
+}
+footer .icons {
+  float: right;
+}
+footer .icons i {
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #fff;
+}
+.clear {
+  clear: both;
+}
+footer .icons i.face {
+  background: #39599f;
+}
+footer .icons i.twit {
+  background: #2daae4;
+}
+footer .icons i.linkd {
+  background: #49708f;
+}
+footer .icons i:nth-last-child(1) {
+  margin-right: 20px;
+}
+@media screen and (max-width: 980px) {
+  .banner {
+    height: 60vh;
+  }
+  h2.altbaslik {
+    font-size: 2.5em;
+  }
+  .banner .yazi p {
+    font-size: 1.5em;
+  }
+  .button a {
+    font-size: 15px;
+    padding: 10px 25px;
+    border-radius: 10px;
+  }
+  .bolum1 .kutu {
+    flex-basis: 100%;
+  }
+  .bolum2 .kisi {
+    flex-basis: 40%;
+  }
+  footer .footerkutu {
+    flex-basis: 40%;
+    margin: 10px 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .bolum2 .kisi {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .bolum2 .kisi img {
+    text-align: center;
+    float: none;
+  }
+  footer .footerkutu {
+    flex-basis: 100%;
+    margin: 10px 20px;
+    text-align: center;
+  }
+  footer .icons {
+    clear: both;
+    float: none;
+    text-align: center;
+  }
+  footer .lisans p {
+    float: none;
+    margin: 20px auto;
+    text-align: center;
+  }
+  footer .icons i {
+    margin-top: 20px;
+  }
+  .bolum3 .container .form {
+    flex-basis: 100%;
+    margin: 70px auto;
+  }
+  .bolum3 .container .form input[type="text"] {
+    width: 80%;
+    margin-bottom: 5px;
+  }
+  .bolum3 .container .form input[type="email"] {
+    width: 80%;
+    margin-bottom: 5px;
+  }
+  .bolum3 .container .form textarea {
+    width: 80%;
+    height: 150px ;
+  }
+}
